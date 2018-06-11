@@ -97,3 +97,8 @@ for efficiency, because my codes serve the pedagogical purpose only.
 * Gunnar Carlsson, “Topology and Data”, *Bull. Amer. Math. Soc.* 46, 255-308 (2009). [\[link\]](http://www.ams.org/journals/bull/2009-46-02/S0273-0979-09-01249-X/)
 * P. Y. Lum, G. Singh, A. Lehman, T. Ishkanov, M. Vejdemo-Johansson, M. Alagappan, J. Carlsson, G. Carlsson, “Extracting insights from the shape of complex data using topology”, *Sci. Rep.* 3, 1236 (2013). [\[link\]](http://www.nature.com/srep/2013/130207/srep01236/full/srep01236.html)
 * Robert Ghrist, “Barcodes: The persistent topology of data,” *Bull. Amer. Math. Soc.* 45, 1-15 (2008). [\[pdf\]](http://www.ams.org/journals/bull/2008-45-01/S0273-0979-07-01191-3/S0273-0979-07-01191-3.pdf)
+
+## Links
+
+* PyPI: [https://pypi.org/project/mogutda/](https://pypi.org/project/mogutda/)
+* Documentation: [https://mogutda.readthedocs.io/](https://mogutda.readthedocs.io/)
