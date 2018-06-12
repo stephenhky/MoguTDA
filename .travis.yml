@@ -1,20 +1,17 @@
-sudo: true
-dist: trusty
-sudo: required
 language: python
 python:
+  - "2.6"
   - "2.7"
+  - "3.3"
+  - "3.4"
+  - "3.5"
+  - "3.5-dev"  # 3.5 development branch
   - "3.6"
-before_install:
-  - wget 'http://repo.continuum.io/miniconda/Miniconda-latest-Linux-x86_64.sh' -O miniconda.sh
-  - chmod +x miniconda.sh
-  - ./miniconda.sh -b
-  - export PATH=/home/travis/miniconda2/bin:$PATH
-  - conda update --yes conda
-  - sudo apt-get update
+  - "3.6-dev"  # 3.6 development branch
+  - "3.7-dev"  # 3.7 development branch
+# command to install dependencies
 install:
-  - conda create --yes -n mogutda-test python=$TRAVIS_PYTHON_VERSION pip numpy scipy
-  - source activate mogutda-test
   - pip install -U .
+# command to run tests
 script:
-  - python setup.py test
+  - pytest # or py.test for Python versions 3.5 and below
