@@ -1,6 +1,4 @@
 
-from functools import partial
-
 from scipy.spatial import Delaunay, distance
 
 from .abssimcomplex import SimplicialComplex
@@ -16,10 +14,11 @@ def contain_detachededges(simplex, distdict, epsilon):
     if len(simplex) == 2:
         return (distdict[simplex[0], simplex[1]] > 2*epsilon)
     else:
-        return (True in map(partial(contain_detachededges,
-                                    distdict=distdict,
-                                    epsilon=epsilon),
-                            facesiter(simplex)))
+        for face in facesiter(simplex):
+            contained = contain_detachededges(face, distdict, epsilon)
+            if contained:
+                return True
+        return False
 
 
 class AlphaComplex(SimplicialComplex):
@@ -40,18 +39,18 @@ class AlphaComplex(SimplicialComplex):
                                                        self.distfcn))
 
     def construct_simplices(self, points, labels, epsilon, distfcn):
-        delaunay_simplices = map(tuple, Delaunay(points).simplices)
         distdict = calculate_distmatrix(points, labels, distfcn)
 
+        delaunayobj = Delaunay(points)
+
         simplices = []
-        for simplex in delaunay_simplices:
-            faces = list(facesiter(simplex))
-            detached = map(partial(contain_detachededges,
-                                   distdict=distdict,
-                                   epsilon=epsilon),
-                           faces)
+        for simplexnda in delaunayobj.simplices:
+            simplex = tuple(simplexnda)
+
+            detached = [contain_detachededges(face, distdict, epsilon) for face in facesiter(simplex)]
+
             if True in detached and len(simplex) > 2:
-                simplices += [face for face, notkeep in zip(faces, detached)
+                simplices += [face for face, notkeep in zip(facesiter(simplex), detached)
                               if not notkeep]
             else:
                 simplices.append(simplex)
