@@ -1,4 +1,7 @@
 # `mogutda`: Topological Data Analysis in Python
+
+[![Build Status](https://travis-ci.org/stephenhky/MoguTDA.svg?branch=master)](https://travis-ci.org/stephenhky/MoguTDA)
+
 ## Introduction
 
 `mogutda` contains Python codes that demonstrate the numerical calculation
@@ -25,6 +28,10 @@ dependencies, but the part of TDA can be quite independent.
 In order to provide other researchers and developers an independent package, which is compact (without
 unecessary alternative packages to load), and efficient, I decided to modularize
 the codes of TDA separately, and name this package `mogutda`.
+
+## Prerequisite
+
+It requires Python 2.7, 3.5, or 3.6.
 
 ## Simple Tutorial: Simplicial Complex
 
@@ -66,6 +73,7 @@ and the corresponding entries are:
 * [Persistence](https://datawarrior.wordpress.com/2015/12/20/tda-4-persistence/) (December 20, 2015)
 * [Topological Phases](https://datawarrior.wordpress.com/2016/10/06/topological-phases/) (October 6, 2016)
 
+
 ## Wolfram Demonstration
 Richard Hennigan put a nice Wolfram Demonstration online explaining what
 the simplicial complexes are, and how homologies are defined:
@@ -74,6 +82,7 @@ the simplicial complexes are, and how homologies are defined:
 
 ## News
 
+* 06/13/2018: `mogutda` 0.1.1 released.
 * 06/11/2018: `mogutda` 0.1.0 released.
 
 ## Other TDA Packages
@@ -96,6 +105,7 @@ for efficiency, because my codes serve the pedagogical purpose only.
 * Afra J. Zomorodian. "Topological Data Analysis," *Proceedings of Symposia in Applied Mathematics* (2011). [\[link\]](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.261.1298)
 * Afra Zomorodian, Gunnar Carlsson, “Computing Persistent Homology,” *Discrete Comput. Geom.* 33, 249-274 (2005). [\[pdf\]](http://geometry.stanford.edu/papers/zc-cph-05/zc-cph-05.pdf)
 * Gunnar Carlsson, “Topology and Data”, *Bull. Amer. Math. Soc.* 46, 255-308 (2009). [\[link\]](http://www.ams.org/journals/bull/2009-46-02/S0273-0979-09-01249-X/)
+* Jeffrey Ray, Marcello Trovati, "A Survey of Topological Data Analysis (TDA) Methods Implemented in Python," in *Advances in Intelligent Networking and Collaborative Systems*, Springer (2018).
 * P. Y. Lum, G. Singh, A. Lehman, T. Ishkanov, M. Vejdemo-Johansson, M. Alagappan, J. Carlsson, G. Carlsson, “Extracting insights from the shape of complex data using topology”, *Sci. Rep.* 3, 1236 (2013). [\[link\]](http://www.nature.com/srep/2013/130207/srep01236/full/srep01236.html)
 * Robert Ghrist, “Barcodes: The persistent topology of data,” *Bull. Amer. Math. Soc.* 45, 1-15 (2008). [\[pdf\]](http://www.ams.org/journals/bull/2008-45-01/S0273-0979-07-01191-3/S0273-0979-07-01191-3.pdf)
 

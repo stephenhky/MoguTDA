@@ -7,13 +7,14 @@ def readme():
 
 
 setup(name='mogutda',
-      version="0.1.1a0",
+      version="0.1.1",
       description="Topological Data Analysis in Python",
       long_description="Topological Data Analysis in Python: Simplicial Complex",
       classifiers=[
-          "Topic :: Scientific/Engineering :: Artificial Intelligence",
           "Topic :: Scientific/Engineering :: Mathematics",
+          "Topic :: Scientific/Engineering :: Physics",
           "Programming Language :: Python :: 2.7",
+          "Programming Language :: Python :: 3.5",
           "Programming Language :: Python :: 3.6",
           "License :: OSI Approved :: MIT License",
       ],
