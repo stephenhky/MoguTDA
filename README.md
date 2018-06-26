@@ -100,6 +100,16 @@ for efficiency, because my codes serve the pedagogical purpose only.
 ### R
 * [TDA](https://cran.r-project.org/web/packages/TDA/index.html) (article: [\[arXiv\]](http://arxiv.org/abs/1411.1830))
 
+## Contributions
+
+If you want to contribute, feel free to fork the repository, and submit
+a pull request whenever you are ready.
+
+If you spot any bugs or issues, go to the [Issue](https://github.com/stephenhky/MoguTDA) page.
+
+I may not approve pull request immediately if your suggested change is big.
+If you want to incorporate something big, please discuss with me first.
+
 ## References
 * Afra J. Zomorodian. *Topology for Computing* (New York, NY: Cambridge University Press, 2009). [\[Amazon\]](https://www.amazon.com/Computing-Cambridge-Monographs-Computational-Mathematics/dp/0521136091)
 * Afra J. Zomorodian. "Topological Data Analysis," *Proceedings of Symposia in Applied Mathematics* (2011). [\[link\]](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.261.1298)
@@ -113,3 +123,4 @@ for efficiency, because my codes serve the pedagogical purpose only.
 
 * PyPI: [https://pypi.org/project/mogutda/](https://pypi.org/project/mogutda/)
 * Documentation: [https://mogutda.readthedocs.io/](https://mogutda.readthedocs.io/)
+* Bug Reports: [https://github.com/stephenhky/MoguTDA](https://github.com/stephenhky/MoguTDA)
