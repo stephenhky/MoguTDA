@@ -25,7 +25,7 @@ setup(name='mogutda',
       license='MIT',
       packages=['mogutda',],
       install_requires=[
-          'numpy', 'scipy', 'numba',  'networkx>=2.0',
+          'numpy', 'scipy', 'networkx>=2.0',
       ],
       tests_require=[
           'unittest2',

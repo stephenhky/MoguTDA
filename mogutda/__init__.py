@@ -1,6 +1,5 @@
 
 from itertools import combinations
-from numba import jit
 
 
 def facesiter(simplex):
@@ -18,7 +17,6 @@ def get_allpoints(simplices):
     return set(flattening_simplex(simplices))
 
 
-@jit(cache=True)
 def faces(simplices):
     faceset = set()
     for simplex in simplices:

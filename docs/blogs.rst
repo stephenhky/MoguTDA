@@ -23,4 +23,7 @@ https://datawarrior.wordpress.com/`_, and the corresponding entries are:
 `Topological Phases
 <https://datawarrior.wordpress.com/2016/10/06/topological-phases/>`_ (October 6, 2016)
 
+`moguTDA: Python package for Simplicial Complex
+<https://datawarrior.wordpress.com/2018/07/02/mogutda-python-package-for-simplicial-complex/>`_ (July 2, 2018)
+
 Home: :doc:`index`
