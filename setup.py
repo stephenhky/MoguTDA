@@ -7,7 +7,7 @@ def readme():
 
 
 setup(name='mogutda',
-      version="0.1.2",
+      version="0.1.3",
       description="Topological Data Analysis in Python",
       long_description="Topological Data Analysis in Python: Simplicial Complex",
       classifiers=[
@@ -16,9 +16,10 @@ setup(name='mogutda',
           "Programming Language :: Python :: 2.7",
           "Programming Language :: Python :: 3.5",
           "Programming Language :: Python :: 3.6",
+          "Programming Language :: Python :: 3.7",
           "License :: OSI Approved :: MIT License",
       ],
-      keywords="mogutda numerics topology",
+      keywords="mogutda numerics topology data",
       url="https://github.com/stephenhky/MoguTDA",
       author="Kwan-Yuet Ho",
       author_email="stephenhky@yahoo.com.hk",
