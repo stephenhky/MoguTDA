@@ -31,7 +31,7 @@ the codes of TDA separately, and name this package `mogutda`.
 
 ## Prerequisite
 
-It requires Python 2.7, 3.5, or 3.6.
+It runs under Python 2.7, 3.5, 3.6, and 3.7.
 
 ## Simple Tutorial: Simplicial Complex
 
