@@ -12,7 +12,7 @@ class SimplicialComplex:
         self.import_simplices(simplices=simplices)
 
     def import_simplices(self, simplices=[]):
-        self.simplices = map(lambda simplex: tuple(sorted(simplex)), simplices)
+        self.simplices = list(map(lambda simplex: tuple(sorted(simplex)), simplices))
         self.face_set = faces(self.simplices)
 
     def n_faces(self, n):
@@ -72,5 +72,5 @@ class SimplicialComplex:
         return ((boundop_i.shape[1]-boundop_i_rank)-boundop_ip1_rank)
 
     def euler_characteristics(self):
-        max_n = max(list(map(len, self.simplices)))
+        max_n = max(map(len, self.simplices))
         return sum([(-1 if a % 2 == 1 else 1)*self.betti_number(a) for a in range(max_n)])
