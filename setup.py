@@ -7,7 +7,7 @@ def readme():
 
 
 setup(name='mogutda',
-      version="0.1.3",
+      version="0.1.4",
       description="Topological Data Analysis in Python",
       long_description="Topological Data Analysis in Python: Simplicial Complex",
       classifiers=[
