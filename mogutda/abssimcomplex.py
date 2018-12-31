@@ -1,11 +1,8 @@
 
-from operator import add
-
 import numpy as np
 from scipy.sparse import dok_matrix
 from scipy.sparse.linalg import aslinearoperator
 from scipy.linalg.interpolative import estimate_rank
-from functools import reduce
 
 from . import faces
 
@@ -75,8 +72,5 @@ class SimplicialComplex:
         return ((boundop_i.shape[1]-boundop_i_rank)-boundop_ip1_rank)
 
     def euler_characteristics(self):
-        max_n = max(map(len, self.simplices))
-        return reduce(add,
-                      map(lambda a: (-1 if a % 2 == 1 else 1)
-                          * self.betti_number(a),
-                          range(max_n)))
+        max_n = max(list(map(len, self.simplices)))
+        return sum([(-1 if a % 2 == 1 else 1)*self.betti_number(a) for a in range(max_n)])
