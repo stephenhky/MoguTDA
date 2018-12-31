@@ -63,7 +63,7 @@ class test_simcomplex(unittest.TestCase):
         self.assertEqual(self.sc1.betti_number(0), 1)
         self.assertEqual(self.sc1.betti_number(1), 0)
         self.assertEqual(self.sc1.betti_number(2), 0)
-        self.assertEqual(self.sc1.euler_characteristics(), 0)
+        self.assertEqual(self.sc1.euler_characteristics(), 1)
 
     def test_sc2(self):
         self.assertEqual(self.sc2.betti_number(0), 1)
