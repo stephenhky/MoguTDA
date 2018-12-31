@@ -1,6 +1,7 @@
 # `mogutda`: Topological Data Analysis in Python
 
 [![Build Status](https://travis-ci.org/stephenhky/MoguTDA.svg?branch=master)](https://travis-ci.org/stephenhky/MoguTDA)
+[![GitHub release](https://img.shields.io/github/release/stephenhky/MoguTDA.svg?maxAge=3600)](https://github.com/stephenhky/MoguTDA/releases)
 
 ## Introduction
 
