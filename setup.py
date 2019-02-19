@@ -6,10 +6,16 @@ def readme():
         return f.read()
 
 
+def package_description():
+    text = open('README.md', 'r').read()
+    startpos = text.find('## Introduction')
+    return text[startpos:]
+
+
 setup(name='mogutda',
-      version="0.1.4",
+      version="0.1.5a01",
       description="Topological Data Analysis in Python",
-      long_description="Topological Data Analysis in Python: Simplicial Complex",
+      long_description=package_description(),
       classifiers=[
           "Topic :: Scientific/Engineering :: Mathematics",
           "Topic :: Scientific/Engineering :: Physics",

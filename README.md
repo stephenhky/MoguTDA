@@ -127,4 +127,4 @@ If you want to incorporate something big, please discuss with me first.
 
 * PyPI: [https://pypi.org/project/mogutda/](https://pypi.org/project/mogutda/)
 * Documentation: [https://mogutda.readthedocs.io/](https://mogutda.readthedocs.io/)
-* Bug Reports: [https://github.com/stephenhky/MoguTDA](https://github.com/stephenhky/MoguTDA)
+* Bug Reports: [https://github.com/stephenhky/MoguTDA/issues](https://github.com/stephenhky/MoguTDA/issues)
