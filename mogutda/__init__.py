@@ -29,3 +29,5 @@ def faces(simplices):
 from .abssimcomplex import SimplicialComplex
 from .alphacomplex import AlphaComplex
 from .vrcomplex import VietorisRipsComplex
+
+import plot
