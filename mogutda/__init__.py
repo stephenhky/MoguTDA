@@ -30,4 +30,4 @@ from .abssimcomplex import SimplicialComplex
 from .alphacomplex import AlphaComplex
 from .vrcomplex import VietorisRipsComplex
 
-import plot
+from . import plot
