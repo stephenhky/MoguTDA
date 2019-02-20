@@ -34,6 +34,9 @@ the codes of TDA separately, and name this package `mogutda`.
 
 It runs under Python 2.7, 3.5, 3.6, and 3.7.
 
+Release 0.1.5 can work under `numpy`>0.16.0, but previous
+release will constitute error under the new `numpy`.
+
 ## Simple Tutorial: Simplicial Complex
 
 You can install by:
@@ -83,6 +86,7 @@ the simplicial complexes are, and how homologies are defined:
 
 ## News
 
+* 02/20/2019: `mogutda` 0.1.5 released.
 * 12/31/2018: `mogutda` 0.1.4 released.
 * 07/18/2018: `mogutda` 0.1.3 released.
 * 07/02/2018: `mogutda` 0.1.2 released.
