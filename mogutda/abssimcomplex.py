@@ -52,9 +52,7 @@ class SimplicialComplex:
             if eps is None:
                 try:
                     boundop_i_rank = np.linalg.matrix_rank(boundop_i.toarray())
-                except np.linalg.LinAlgError:
-                    boundop_i_rank = boundop_i.shape[1]
-                except ValueError:
+                except (np.linalg.LinAlgError, ValueError):
                     boundop_i_rank = boundop_i.shape[1]
             else:
                 boundop_i_rank = estimate_rank(
@@ -64,7 +62,7 @@ class SimplicialComplex:
         if eps is None:
             try:
                 boundop_ip1_rank = np.linalg.matrix_rank(boundop_ip1.toarray())
-            except np.linalg.LinAlgError:
+            except (np.linalg.LinAlgError, ValueError):
                 boundop_ip1_rank = boundop_ip1.shape[1]
         else:
             boundop_ip1_rank = estimate_rank(
