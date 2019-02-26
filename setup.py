@@ -13,9 +13,10 @@ def package_description():
 
 
 setup(name='mogutda',
-      version="0.1.5",
+      version="0.1.6a01",
       description="Topological Data Analysis in Python",
       long_description=package_description(),
+      long_description_content_type='text/markdown',
       classifiers=[
           "Topic :: Scientific/Engineering :: Mathematics",
           "Topic :: Scientific/Engineering :: Physics",
@@ -24,6 +25,10 @@ setup(name='mogutda',
           "Programming Language :: Python :: 3.6",
           "Programming Language :: Python :: 3.7",
           "License :: OSI Approved :: MIT License",
+          "Intended Audience :: Developers",
+          "Intended Audience :: Education",
+          "Intended Audience :: Information Technology",
+          "Intended Audience :: Science/Research"
       ],
       keywords="mogutda numerics topology data",
       url="https://github.com/stephenhky/MoguTDA",
