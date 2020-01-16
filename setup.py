@@ -13,7 +13,7 @@ def package_description():
 
 
 setup(name='mogutda',
-      version="0.2.0a02",
+      version="0.2.0",
       description="Topological Data Analysis in Python",
       long_description=package_description(),
       long_description_content_type='text/markdown',
