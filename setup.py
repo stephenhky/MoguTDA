@@ -13,7 +13,7 @@ def package_description():
 
 
 setup(name='mogutda',
-      version="0.2.0a01",
+      version="0.2.0",
       description="Topological Data Analysis in Python",
       long_description=package_description(),
       long_description_content_type='text/markdown',
@@ -23,6 +23,7 @@ setup(name='mogutda',
           "Programming Language :: Python :: 3.5",
           "Programming Language :: Python :: 3.6",
           "Programming Language :: Python :: 3.7",
+          "Programming Language :: Python :: 3.8",
           "License :: OSI Approved :: MIT License",
           "Intended Audience :: Developers",
           "Intended Audience :: Education",
