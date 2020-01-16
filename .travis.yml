@@ -9,6 +9,7 @@ dist: xenial
 sudo: true
 # command to install dependencies
 install:
+  - pip install -U tensorflow>=2.0.0
   - pip install -U .
 # command to run tests
 script:
