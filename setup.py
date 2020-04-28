@@ -12,8 +12,12 @@ def package_description():
     return text[startpos:]
 
 
+def install_requirements():
+    return [package_string.strip() for package_string in open('requirements.txt', 'r')]
+
+
 setup(name='mogutda',
-      version="0.2.0",
+      version="0.2.1",
       description="Topological Data Analysis in Python",
       long_description=package_description(),
       long_description_content_type='text/markdown',
@@ -36,12 +40,7 @@ setup(name='mogutda',
       author_email="stephenhky@yahoo.com.hk",
       license='MIT',
       packages=['mogutda',],
-      install_requires=[
-          'numpy>=1.16.0', 'scipy>=1.2.0', 'networkx>=2.0',
-      ],
-      tests_require=[
-          'unittest2',
-      ],
+      install_requires=install_requirements(),
       include_package_data=True,
       test_suite="test",
       zip_safe=False)

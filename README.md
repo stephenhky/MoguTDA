@@ -2,6 +2,9 @@
 
 [![Build Status](https://travis-ci.org/stephenhky/MoguTDA.svg?branch=master)](https://travis-ci.org/stephenhky/MoguTDA)
 [![GitHub release](https://img.shields.io/github/release/stephenhky/MoguTDA.svg?maxAge=3600)](https://github.com/stephenhky/MoguTDA/releases)
+[![Documentation Status](https://readthedocs.org/projects/mogutda/badge/?version=latest)](https://mogutda.readthedocs.io/en/latest/?badge=latest)
+[![Updates](https://pyup.io/repos/github/stephenhky/MoguTDA/shield.svg)](https://pyup.io/repos/github/stephenhky/MoguTDA/)
+[![Python 3](https://pyup.io/repos/github/stephenhky/MoguTDA/python-3-shield.svg)](https://pyup.io/repos/github/stephenhky/MoguTDA/)
 
 ## Introduction
 
