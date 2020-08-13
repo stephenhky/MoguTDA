@@ -166,5 +166,7 @@ venv.bak/
 # mypy
 .mypy_cache/
 
+.flake8
+.pre-commit-config.yaml
 
 # End of https://www.gitignore.io/api/python,pycharm
