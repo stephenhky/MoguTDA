@@ -1,7 +1,4 @@
 from itertools import combinations
-from .abssimcomplex import SimplicialComplex
-from .alphacomplex import AlphaComplex
-from .vrcomplex import VietorisRipsComplex
 
 
 def facesiter(simplex):
@@ -27,3 +24,8 @@ def faces(simplices):
             for face in combinations(simplex, r):
                 faceset.add(tuple(sorted(face)))
     return faceset
+
+
+from .abssimcomplex import SimplicialComplex
+from .alphacomplex import AlphaComplex
+from .vrcomplex import VietorisRipsComplex
