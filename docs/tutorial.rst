@@ -16,4 +16,8 @@ To retrieve its Betti numbers, type:
 >>> print(torus_c.betti_number(1))   # print 2
 >>> print(torus_c.betti_number(2))   # print 1
 
+To visually present the topology, type:
+
+>>> torus_c.draw()
+
 Home: :doc:`index`
