@@ -1,10 +1,9 @@
-
 from itertools import combinations
 
 
 def facesiter(simplex):
     for i in range(len(simplex)):
-        yield simplex[:i]+simplex[(i+1):]
+        yield simplex[:i] + simplex[(i + 1) :]
 
 
 def flattening_simplex(simplices):
@@ -25,6 +24,7 @@ def faces(simplices):
             for face in combinations(simplex, r):
                 faceset.add(tuple(sorted(face)))
     return faceset
+
 
 from .abssimcomplex import SimplicialComplex
 from .alphacomplex import AlphaComplex
