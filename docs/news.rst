@@ -1,6 +1,7 @@
 News
 ====
 
+* 11/28/2020: `mogutda` 0.3.1 released.
 * 08/16/2020: `mogutda` 0.3.0 released.
 * 04/28/2020: `mogutda` 0.2.1 released.
 * 01/16/2020: `mogutda` 0.2.0 released.
