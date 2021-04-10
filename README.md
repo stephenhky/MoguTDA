@@ -1,6 +1,6 @@
 # `mogutda`: Topological Data Analysis in Python
 
-[![Build Status](https://travis-ci.org/stephenhky/MoguTDA.svg?branch=master)](https://travis-ci.org/stephenhky/MoguTDA)
+[![CircleCI](https://circleci.com/gh/stephenhky/MoguTDA.svg?style=svg)](https://circleci.com/gh/stephenhky/MoguTDA.svg)
 [![GitHub release](https://img.shields.io/github/release/stephenhky/MoguTDA.svg?maxAge=3600)](https://github.com/stephenhky/MoguTDA/releases)
 [![Documentation Status](https://readthedocs.org/projects/mogutda/badge/?version=latest)](https://mogutda.readthedocs.io/en/latest/?badge=latest)
 [![Updates](https://pyup.io/repos/github/stephenhky/MoguTDA/shield.svg)](https://pyup.io/repos/github/stephenhky/MoguTDA/)
@@ -89,6 +89,8 @@ the simplicial complexes are, and how homologies are defined:
 
 ## News
 
+* 11/28/2020: `mogutda` 0.3.1 released.
+* 08/16/2020: `mogutda` 0.3.0 released.
 * 04/28/2020: `mogutda` 0.2.1 released.
 * 01/16/2020: `mogutda` 0.2.0 released.
 * 02/20/2019: `mogutda` 0.1.5 released.

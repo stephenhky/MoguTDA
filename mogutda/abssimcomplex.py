@@ -1,14 +1,15 @@
+
+from itertools import combinations
+import warnings
+
 import numpy as np
 from scipy.sparse import dok_matrix
-from itertools import combinations
 from scipy.sparse.linalg import aslinearoperator
 from scipy.linalg.interpolative import estimate_rank
 import networkx as nx
 import matplotlib.pyplot as plt
-import warnings
 
-
-from . import faces
+from .utils import faces
 
 
 class SimplicialComplex:
@@ -16,11 +17,13 @@ class SimplicialComplex:
         self.import_simplices(simplices=simplices)
 
     def import_simplices(self, simplices=[]):
-        self.simplices = list(map(lambda simplex: tuple(sorted(simplex)), simplices))
+        # self.simplices = list(map(lambda simplex: tuple(sorted(simplex)), simplices))
+        self.simplices = [tuple(sorted(simplex)) for simplex in simplices]
         self.face_set = faces(self.simplices)
 
     def n_faces(self, n):
-        return list(filter(lambda face: len(face) == n + 1, self.face_set))
+        # return list(filter(lambda face: len(face) == n + 1, self.face_set))
+        return [face for face in self.face_set if len(face) == n+1]
 
     def boundary_operator(self, i):
         source_simplices = self.n_faces(i)
@@ -28,7 +31,7 @@ class SimplicialComplex:
 
         if len(target_simplices) == 0:
             S = dok_matrix((1, len(source_simplices)), dtype=np.float64)
-            S[0, 0 : len(source_simplices)] = 1
+            S[0, 0:len(source_simplices)] = 1
         else:
             source_simplices_dict = {
                 source_simplices[j]: j for j in range(len(source_simplices))
@@ -82,9 +85,9 @@ class SimplicialComplex:
     def generate_graph(self, simplices=None):
         """ Generate edges and vertices in sets """
         if len(self.simplices) == 0 and simplices is None:
-            raise Exception("No simplices to create a graph from. Please specify one")
+            raise Exception("No simplices to create a graph from. Please specify one.")
         elif simplices is not None:
-            self.simplices = self.import_simplices(simplices=simplices)
+            self.import_simplices(simplices=simplices)
 
         vertices = set()
         edges = set()
@@ -96,7 +99,7 @@ class SimplicialComplex:
                 edges.add(tuple(sorted([vertex1, vertex2])))
         return vertices, edges
 
-    def draw(self, vertex_labels=True, edge_labels=False, override_100_limit=False):
+    def draw(self, vertex_labels=True, edge_labels=False):
         """ Draw the Simplicial Complex """
         vertices, edges = self.generate_graph()
 

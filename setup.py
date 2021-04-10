@@ -17,7 +17,7 @@ def install_requirements():
 
 
 setup(name='mogutda',
-      version="0.3.1",
+      version="0.3.2a1",
       description="Topological Data Analysis in Python",
       long_description=package_description(),
       long_description_content_type='text/markdown',
@@ -27,6 +27,7 @@ setup(name='mogutda',
           "Programming Language :: Python :: 3.6",
           "Programming Language :: Python :: 3.7",
           "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
           "License :: OSI Approved :: MIT License",
           "Intended Audience :: Developers",
           "Intended Audience :: Education",
