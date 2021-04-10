@@ -1,0 +1,46 @@
+version: 2
+
+shared: &shared
+  working_directory: ~/mogutda
+
+  steps:
+    - checkout
+
+    - run:
+        name: Installing Packages
+        command: |
+          pip install --upgrade --user pip
+          pip install --upgrade --user .
+          pip install --upgrade --user pytest
+
+    - run:
+        name: Run Unit Tests
+        command: |
+          pytest
+
+
+
+jobs:
+  py36:
+    <<: *shared
+    docker:
+      - image: circleci/python:3.6
+
+  py37:
+    <<: *shared
+    docker:
+      - image: circleci/python:3.7
+
+  py38:
+    <<: *shared
+    docker:
+      - image: circleci/python:3.8
+
+
+workflows:
+  version: 2
+  build:
+    jobs:
+      - py36
+      - py37
+      - py38
