@@ -5,6 +5,10 @@
 [![Documentation Status](https://readthedocs.org/projects/mogutda/badge/?version=latest)](https://mogutda.readthedocs.io/en/latest/?badge=latest)
 [![Updates](https://pyup.io/repos/github/stephenhky/MoguTDA/shield.svg)](https://pyup.io/repos/github/stephenhky/MoguTDA/)
 [![Python 3](https://pyup.io/repos/github/stephenhky/MoguTDA/python-3-shield.svg)](https://pyup.io/repos/github/stephenhky/MoguTDA/)
+[![pypi](https://img.shields.io/pypi/v/mogutda.svg?maxAge=3600)](https://pypi.org/project/mogutda/)
+[![download](https://img.shields.io/pypi/dm/mogutda.svg?maxAge=2592000&label=installs&color=%2327B1FF)](https://pypi.org/project/mogutda/)
+[![stars](https://img.shields.io/github/stars/stephenhky/MoguTDA.svg?style=social&label=Star&maxAge=60)](https://github.com/stephenhky/MoguTDA)
+
 
 ## Introduction
 
@@ -89,6 +93,7 @@ the simplicial complexes are, and how homologies are defined:
 
 ## News
 
+* 07/15/2021: `mogutda` 0.3.3 released.
 * 04/10/2021: `mogutda` 0.3.2 released.
 * 11/28/2020: `mogutda` 0.3.1 released.
 * 08/16/2020: `mogutda` 0.3.0 released.
