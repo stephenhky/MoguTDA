@@ -2,18 +2,18 @@
 from setuptools import setup
 
 def readme():
-    with open('README.md') as f:
+    with open('README.md', "r", encoding="utf-8") as f:
         return f.read()
 
 
 def package_description():
-    text = open('README.md', 'r').read()
+    text = open('README.md', 'r', encoding="utf-8").read()
     startpos = text.find('## Introduction')
     return text[startpos:]
 
 
 def install_requirements():
-    return [package_string.strip() for package_string in open('requirements.txt', 'r')]
+    return [package_string.strip() for package_string in open('requirements.txt', 'r', encoding="utf-8")]
 
 
 setup(name='mogutda',
