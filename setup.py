@@ -2,7 +2,7 @@
 from setuptools import setup
 
 def readme():
-    with open('README.md', "r", encoding="utf-8") as f:
+    with open('README.md', 'r', encoding="utf-8") as f:
         return f.read()
 
 
@@ -13,11 +13,15 @@ def package_description():
 
 
 def install_requirements():
-    return [package_string.strip() for package_string in open('requirements.txt', 'r', encoding="utf-8")]
+    return [
+        package_string.strip()
+        for package_string in open('requirements.txt', 'r', encoding="utf-8")
+    ]
+
 
 
 setup(name='mogutda',
-      version="0.3.3",
+      version="0.3.4a2",
       description="Topological Data Analysis in Python",
       long_description=package_description(),
       long_description_content_type='text/markdown',

@@ -24,22 +24,27 @@ jobs:
   py36:
     <<: *shared
     docker:
-      - image: circleci/python:3.6
+      - image: cimg/python:3.6
 
   py37:
     <<: *shared
     docker:
-      - image: circleci/python:3.7
+      - image: cimg/python:3.7
 
   py38:
     <<: *shared
     docker:
-      - image: circleci/python:3.8
+      - image: cimg/python:3.8
 
   py39:
     <<: *shared
     docker:
-      - image: circleci/python:3.9
+      - image: cimg/python:3.9
+
+  py310:
+    <<: *shared
+    docker:
+      - image: cimg/python:3.10
 
 
 workflows:
@@ -50,3 +55,4 @@ workflows:
       - py37
       - py38
       - py39
+      - py310
