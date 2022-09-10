@@ -1,6 +1,7 @@
 
 from setuptools import setup
 
+
 def readme():
     with open('README.md', 'r', encoding="utf-8") as f:
         return f.read()
@@ -19,9 +20,8 @@ def install_requirements():
     ]
 
 
-
 setup(name='mogutda',
-      version="0.3.4a2",
+      version="0.3.4",
       description="Topological Data Analysis in Python",
       long_description=package_description(),
       long_description_content_type='text/markdown',
@@ -32,6 +32,7 @@ setup(name='mogutda',
           "Programming Language :: Python :: 3.7",
           "Programming Language :: Python :: 3.8",
           "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
           "License :: OSI Approved :: MIT License",
           "Intended Audience :: Developers",
           "Intended Audience :: Education",

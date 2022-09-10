@@ -93,6 +93,7 @@ the simplicial complexes are, and how homologies are defined:
 
 ## News
 
+* 09/09/2022: `mogutda` 0.3.4 released.
 * 07/15/2021: `mogutda` 0.3.3 released.
 * 04/10/2021: `mogutda` 0.3.2 released.
 * 11/28/2020: `mogutda` 0.3.1 released.
