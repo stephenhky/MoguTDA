@@ -39,7 +39,7 @@ the codes of TDA separately, and name this package `mogutda`.
 
 ## Prerequisite
 
-It runs under Python 3.5, 3.6, 3.7, and 3.8.
+It runs under Python 3.6, 3.7, 3.8, 3.9, 3.10, and 3.11.
 
 Release 0.1.5 can work under `numpy`>0.16.0, but previous
 release will constitute error under the new `numpy`.
