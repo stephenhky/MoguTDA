@@ -21,7 +21,7 @@ def install_requirements():
 
 
 setup(name='mogutda',
-      version="0.4.0a1",
+      version="0.4.0",
       description="Topological Data Analysis in Python",
       long_description=package_description(),
       long_description_content_type='text/markdown',
