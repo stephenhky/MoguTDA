@@ -39,17 +39,14 @@ the codes of TDA separately, and name this package `mogutda`.
 
 ## Prerequisite
 
-It runs under Python 3.6, 3.7, 3.8, 3.9, 3.10, and 3.11.
-
-Release 0.1.5 can work under `numpy`>0.16.0, but previous
-release will constitute error under the new `numpy`.
+It runs under Python 3.8, 3.9, 3.10, and 3.11.
 
 ## Simple Tutorial: Simplicial Complex
 
 You can install by:
 
 ```
-pip install -U mogutda
+pip install mogutda
 ```
 
 To establish a simplicial complex for a torus, type
@@ -93,6 +90,7 @@ the simplicial complexes are, and how homologies are defined:
 
 ## News
 
+* 08/18/2023: `mogutda` 0.4.0 released.
 * 06/20/2023: `mogutda` 0.3.5 released.
 * 09/09/2022: `mogutda` 0.3.4 released.
 * 07/15/2021: `mogutda` 0.3.3 released.
