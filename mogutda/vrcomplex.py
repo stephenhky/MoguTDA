@@ -17,7 +17,7 @@ class VietorisRipsComplex(SimplicialComplex):
     ):
         super(VietorisRipsComplex, self).__init__()
         self.pts = points
-        self.labels = (range(len(self.pts))
+        self.labels = (list(range(len(self.pts)))
                        if labels is None or len(labels) != len(self.pts)
                        else labels)
         self.epsilon = epsilon
@@ -30,8 +30,7 @@ class VietorisRipsComplex(SimplicialComplex):
     def construct_network(self, points, labels, epsilon, distfcn):
         g = nx.Graph()
         g.add_nodes_from(labels)
-        zips = zip(points, labels)
-        for pair in product(zips, zips):
+        for pair in product(zip(points, labels), zip(points, labels)):
             if pair[0][1] != pair[1][1]:
                 dist = distfcn(pair[0][0], pair[1][0])
                 if dist < epsilon:
