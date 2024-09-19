@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mogutda"
+version = "0.4.3a1"
+authors = [
+    {name = "Kwan Yuet Stephen Ho", email = "stephenhky@yahoo.com.hk"}
+]
+description = "Topological Data Analysis in Python"
+readme = {file = "README.md", content-type = "text/markdown"}
+license = {text = "MIT"}
+keywords = ["mogutda", "numerical methods", "topology", "data", "algebraic topology"]
+requires-python = ">=3.8"
+classifiers = [
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: Science/Research"
+]
+dependencies = ["numpy>=1.16.0", "scipy>=1.10.0", "networkx>=2.0", "matplotlib>=3.3.0"]
+
+[project.urls]
+Documentation = "https://mogutda.readthedocs.io"
+Repository = "https://github.com/stephenhky/MoguTDA"
+Issues = "https://github.com/stephenhky/MoguTDA/issues"
+
+[tool.setuptools]
+packages = ["mogutda"]
+zip-safe = false
+
+[project.optional-dependencies]
+test = ["unittest"]
