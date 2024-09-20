@@ -10,7 +10,7 @@ However, `mogu` is simply a collection of unrelated numerical routines with a lo
 dependencies, but the part of TDA can be quite independent.
 
 In order to provide other researchers and developers an independent package, which is compact (without
-unecessary alternative packages to load), and efficient, I decided to modularize
+unnecessary alternative packages to load), and efficient, I decided to modularize
 the codes of TDA separately, and name this package `mogutda`.
 
 .. _mogu: https://pypi.org/project/mogu/
