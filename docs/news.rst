@@ -1,7 +1,8 @@
 News
 ====
 
-* 07/16/2023: `mogutsa` 0.4.2 released.
+* 09/19/2024: `mogutda` 0.4.3 released.
+* 07/16/2024: `mogutda` 0.4.2 released.
 * 11/23/2023: `mogutda` 0.4.1 released.
 * 08/18/2023: `mogutda` 0.4.0 released.
 * 06/20/2023: `mogutda` 0.3.5 released.

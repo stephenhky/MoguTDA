@@ -16,7 +16,7 @@ draw some insights from them. A lot of machine learning algorithms deal
 with distances, which are extremely useful, but they miss the
 information the data may carry from their geometry.
 
-`mogutda` runs in Python 3.8, 3.9, 3.10, and 3.11.
+`mogutda` runs in Python 3.8, 3.9, 3.10, 3.11, and 3.12.
 
 Contributors:
 
