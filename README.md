@@ -39,7 +39,7 @@ the codes of TDA separately, and name this package `mogutda`.
 
 ## Prerequisite
 
-It runs under Python 3.8, 3.9, 3.10, and 3.11.
+It runs under Python 3.8, 3.9, 3.10, 3.11, 3.12, and 3.13.
 
 ## Simple Tutorial: Simplicial Complex
 
@@ -90,6 +90,7 @@ the simplicial complexes are, and how homologies are defined:
 
 ## News
 
+* 01/09/2025: `mogutda` 0.4.4 released.
 * 09/19/2024: `mogutda` 0.4.3 released.
 * 07/16/2024: `mogutsa` 0.4.2 released.
 * 11/23/2023: `mogutda` 0.4.1 released.
