@@ -11,7 +11,7 @@ shared: &shared
         command: |
           pip install --upgrade --user pip
           pip install --upgrade --user .
-          pip install --upgrade --user .[test]
+          pip install --upgrade --user pytest
 
     - run:
         name: Run Unit Tests

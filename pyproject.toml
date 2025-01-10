@@ -40,4 +40,4 @@ packages = ["mogutda"]
 zip-safe = false
 
 [project.optional-dependencies]
-test = ["unittest"]
+test = ["unittest", "pytest"]
