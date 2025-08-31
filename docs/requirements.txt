@@ -1,4 +1,4 @@
 numpy==2.3.2
 scipy==1.16.1
 networkx==3.5
-matplotlib==3.10.5
+matplotlib==3.10.6
