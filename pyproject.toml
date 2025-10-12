@@ -38,6 +38,7 @@ Issues = "https://github.com/stephenhky/MoguTDA/issues"
 [tool.setuptools]
 packages = ["mogutda"]
 zip-safe = false
+package-dir = {"" = "src"}
 
 [project.optional-dependencies]
 test = ["unittest", "pytest"]
