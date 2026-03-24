@@ -13,11 +13,12 @@ from .utils import faces
 
 
 class SimplicialComplex:
-    def __init__(self, simplices=[]):
-        self.import_simplices(simplices=simplices)
+    def __init__(self, simplices=None):
+        self.import_simplices(simplices=simplices if simplices is not None else [])
 
-    def import_simplices(self, simplices=[]):
-        # self.simplices = list(map(lambda simplex: tuple(sorted(simplex)), simplices))
+    def import_simplices(self, simplices=None):
+        if simplices is None:
+            simplices = []
         self.simplices = [tuple(sorted(simplex)) for simplex in simplices]
         self.face_set = faces(self.simplices)
 
