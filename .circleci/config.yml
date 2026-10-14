@@ -51,6 +51,12 @@ jobs:
     docker:
       - image: cimg/python:3.13
 
+  py314:
+    <<: *shared
+    docker:
+      - image: cimg/python:3.14
+
+
 workflows:
   version: 2
   build:
@@ -61,3 +67,4 @@ workflows:
       - py311
       - py312
       - py313
+      - py314
